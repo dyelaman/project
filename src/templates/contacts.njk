@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        {% include "./components/head.njk" %}
+    </head>
+    <html>
+    <body>
+        {% include "./components/header2.njk" %}
+        <section id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wrapper">
+                            <p>Мы всегда на связи и ответим на все интересующие Вас вопросы!</p>
+                            <div class="wrapper__first">
+                                <div class="wrapper__second">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../img/cellphone.png">
+                                        </div>
+                                        <div class="item__text">
+                                            <h5>Телефоны</h5>
+                                            <p>В Болгарии  8 (123) 12-123-123<br>
+                                                В России     8 (495) 12-123-123</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../img/sobachka.png">
+                                        </div>
+                                        <div class="item__text">
+                                            <h5>E-mail</h5>
+                                            <p>info@sitename.ru</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../img/skype.png">
+                                        </div>
+                                        <div class="item__text">
+                                            <h5>Skype</h5>
+                                            <p>skypename</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form">
+                                    <h3>Есть вопросы <br> <span>по переезду в Болгарию?</span></h3>
+                                    <p>Мы проконсультируем <br> Вас бесплатно</p>
+                                    <form>
+                                        <div class="form__item">
+                                            <input type="text" name="name" placeholder="Имя" required id="name">
+                                        </div>
+                                        <div class="form__item">
+                                            <input type="text" name="email" placeholder="E-mail" required id="email">
+                                        </div>
+                                        <div class="form__item">
+                                            <input type="tel" name="tel" placeholder="Телефон" required id="tel">
+                                        </div>
+                                        <div class="form__button">
+                                            <button type="submit">Заказать консультацию</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include "./components/footer.njk" %}
+    </body>
+</html>

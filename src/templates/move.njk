@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% include "./components/head.njk" %}
+</head>
+    <body>
+        <section id="header">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2 col-sm-6 col-xs-9">
+                            <a href="#">
+                                <img src="../img/logo.png">
+                            </a>
+                        </div>
+                        <div class="col-md-7 col-lg-7">
+                            <nav class="hidden-sm hidden-xs">
+                                <ul class="menu">
+                                    <li class="menu__item">
+                                        <a href="index.html">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="about.html">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#">
+                                            ВНЖ и ПМЖ в Болгарии
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="move.html">
+                                            Недвижимость и переезд
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="contacts.html">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-3 col-sm-6 hidden-xs ">
+                            <div class="contacts">
+                                <div class="contacts__img">
+                                    <a href="#">
+                                        <img src="../img/phone.png">
+                                    </a>
+                                </div>
+                                <div class="contacts__phone">
+                                    +7 (495) 12-321-345
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 col-xs-1
+                         col-xs-offset-1 col-sm-offset-0 hidden-md hidden-lg">
+                            <a href="#">
+                                <div class="burger">
+                                    <div class="block"></div>
+                                    <div class="block"></div>
+                                    <div class="block"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="first__screen">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Недвижимость и переезд</h1>
+                            <a href="#">
+                                <img src="../img/arrowheader.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="move">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="wrapper">
+                            <p>После того, как решены юридические вопросы с видом на жительство
+                                в Болгарии, главной задачей становится
+                                <span>найти новый дом или квартиру и организовать перевоз вещей</span>
+                            </p>
+                            <div class="block">
+                                <div class="img">
+                                    <img src="../img/house.png">
+                                </div>
+                                <div class="text">
+                                    Мы подберем лучшие варианты для Вашей новой жизни и подходящие
+                                    по ценовой категории - будь то квартира-студия для молодой пары,
+                                    или роскошный дом на побережье для большой семьи.
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="text__second">
+                                    При переезде в другую страну всегда возникает вопрос -
+                                    как перевозить все свои вещи? Мы готовы Вам помочь в перевозке
+                                    личных вещей из РФ в Болгарию. Большой опыт в перевозке вещей
+                                    поможет избежать лишних затрат и выбрать только надежные и
+                                    аккуратные транспортные компании, что гарантирует сохранность Вашего имущества.
+                                </div>
+                                <div class="img__second">
+                                    <img src="../img/boxes.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="questions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Есть вопросы <br> по переезду в болгарию?</h2>
+                        <p>Мы проконсультируем <br> Вас бесплатно!</p>
+                        <a href="#">
+                            <img src="../img/footerarrow.png">
+                        </a>
+                        <form>
+                            <label>
+                                <input type="text" placeholder="Имя" class="input">
+                            </label>
+                            <label>
+                                <input type="email" placeholder="E-mail" class="input">
+                            </label>
+                            <label>
+                                <input type="tel" placeholder="Телефон" class="input">
+                            </label>
+                            <button type="submit" class="act">Заказать консультацию</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include "./components/footer.njk" %}
+    </body>
+</html>

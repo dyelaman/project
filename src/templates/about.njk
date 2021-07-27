@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% include "./components/head.njk" %}
+</head>
+<html>
+    <body>
+    <section id="header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-sm-6 col-xs-9">
+                        <a href="#">
+                            <img src="../img/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-md-7 col-lg-7">
+                        <nav class="hidden-sm hidden-xs">
+                            <ul class="menu">
+                                <li class="menu__item">
+                                    <a href="index.html">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="move.html">
+                                        Переезд в Болгарию
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">
+                                        Открытие представительства
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contacts.html">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3 col-sm-6 hidden-xs ">
+                        <div class="contacts">
+                            <div class="contacts__img">
+                                <a href="#">
+                                    <img src="../img/phone.png">
+                                </a>
+                            </div>
+                            <div class="contacts__phone">
+                                +7 (495) 12-321-345
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-xs-1 col-xs-offset-1 col-sm-offset-0 hidden-md hidden-lg">
+                        <a href="#">
+                            <div class="burger">
+                                <div class="block"></div>
+                                <div class="block"></div>
+                                <div class="block"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="first__screen">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>О компании</h1>
+                        <a href="#">
+                            <img src="../img/arrowheader.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <p><span>Надежность и достоверность</span> - главные принципы нашей работы. Мы всегда готовы ответить
+                            на самые сложные и неоднозначные вопросы о переезде в Болгарию, помочь со всеми
+                            формальностями и принять верное решение!
+                        </p>
+                        <div class="text">
+                            <div class="text__first">
+                                <h4>Десятки</h4>
+                                <p>Довольных клиентов</p>
+                            </div>
+                            <div class="text__second">
+                                <h4>Уже обрели</h4>
+                            </div>
+                            <div class="text__third">
+                                <h4>Новый дом</h4>
+                                <p>В Болгарии</p>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p>А вы готовы?</p>
+                        </div>
+                        <h2>Управляющие партнеры</h2>
+                        <div class="partners">
+                            <div class="partners__block">
+                                <img src="../img/partner1.png">
+                                <h4>Игорь Ковалев</h4>
+                                <p>Переезд в другую страну всегда сопряжен с рисками, особенно если Вы переезжаете
+                                    всей семьей. Необходимо позаботиться - в какой детский сад будут хоть ваши дети,
+                                    какую школу посещать, как получить медицинскую помощь вашим родителям и какой
+                                    бизнес вы сможете открыть на новом месте жительства. Мы поможем Вам разобраться
+                                    во всех деталях, а вам останется только наслаждаться новым уровнем жизни! :)</p>
+                            </div>
+                            <div class="partners__block">
+                                <img src="../img/partner2.png">
+                                <h4>Виктор Петров</h4>
+                                <p>Я на своем опыте убедился сколько сложностей возникает при переезде в другую
+                                    страну. Сколько нюансов нужно узнать и учесть, что легально переехать на ВНЖ.
+                                    Но скажу точно - это того стоит! Каждое утро я вижу Солнечный берег и Вам готов
+                                    помочь в переезде в Болгарию. В добрый путь!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="questions">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Есть вопросы <br> по переезду в болгарию?</h2>
+                    <p>Мы проконсультируем <br> Вас бесплатно!</p>
+                    <a href="#">
+                        <img src="../img/footerarrow.png">
+                    </a>
+                    <form>
+                        <label>
+                            <input type="text" placeholder="Имя" class="input">
+                        </label>
+                        <label>
+                            <input type="email" placeholder="E-mail" class="input">
+                        </label>
+                        <label>
+                            <input type="tel" placeholder="Телефон" class="input">
+                        </label>
+                        <button type="submit" class="act">Заказать консультацию</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "./components/footer.njk" %}
+    </body>
+</html>
