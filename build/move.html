@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    {% include "./components/head.njk" %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Project SD</title>
 </head>
-<html>
-    <body>
+
+<body>
     <section id="header">
         <div class="top">
             <div class="container">
@@ -28,13 +38,13 @@
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="move.html">
-                                        Moving to Kazakhstan
+                                    <a href="#">
+                                        Tour in Kazakhstan
                                     </a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#">
-                                        Office opening
+                                    <a href="move.html">
+                                        Real estate and moving
                                     </a>
                                 </li>
                                 <li class="menu__item">
@@ -57,7 +67,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-1 col-xs-1 col-xs-offset-1 col-sm-offset-0 hidden-md hidden-lg">
+                    <div class="col-sm-1 col-xs-1
+                         col-xs-offset-1 col-sm-offset-0 hidden-md hidden-lg">
                         <a href="#">
                             <div class="burger">
                                 <div class="block"></div>
@@ -73,7 +84,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>About company</h1>
+                        <h1>Real estate and moving</h1>
                         <a href="#">
                             <img src="../img/arrowheader.png">
                         </a>
@@ -82,51 +93,35 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="move">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="wrapper">
-                        <p><span>Reliability and credibility</span> - the main principles of our work. We are
-                            always ready to answer the most difficult and controversial questions about moving to
-                            Bulgaria, to help with everyone formalities and make the right decision!
+                        <p>After the legal issues with a residence permit in Bulgaria are resolved,
+                            the main task becomes
+                            <span>find a new house or apartment and organize the transportation of things</span>
                         </p>
-                        <div class="text">
-                            <div class="text__first">
-                                <h4>Dozens</h4>
-                                <p>satisfied customers</p>
+                        <div class="block">
+                            <div class="img">
+                                <img src="../img/house.png">
                             </div>
+                            <div class="text">
+                                We will select the best options for your new life and suitable for the price
+                                category - whether it is a studio apartment for a young couple, or a luxury house
+                                on the coast for a large family.
+                            </div>
+                        </div>
+                        <div class="block">
                             <div class="text__second">
-                                <h4>Already found</h4>
+                                When moving to another country, the question always arises - how to transport
+                                all your belongings? We are ready to help you with the transportation of personal
+                                belongings from the Russian Federation to Bulgaria. Extensive experience in
+                                transporting things will help you avoid unnecessary costs and choose only reliable
+                                and tidy transport companies, which guarantees the safety of your property.
                             </div>
-                            <div class="text__third">
-                                <h4>New house</h4>
-                                <p>In KZ</p>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <p>Are you ready?</p>
-                        </div>
-                        <h2>Managing partners</h2>
-                        <div class="partners">
-                            <div class="partners__block">
-                                <img src="../img/partner1.png">
-                                <h4>Daniyal Yelaman</h4>
-                                <p>Moving to another country is always fraught with risks, especially if you are moving
-                                    with the whole family. You need to take care of what kind of kindergarten your
-                                    children will go to, what school they attend, how to get medical care for your
-                                    parents and what kind of business you can open in your new place of residence.
-                                    We will help you figure out all the details, and you will only have to enjoy a new
-                                    level of life! :)</p>
-                            </div>
-                            <div class="partners__block">
-                                <img src="../img/partner2.png">
-                                <h4>Karim Yelaman</h4>
-                                <p>I was convinced from my own experience how many difficulties arise when moving
-                                    to another country. How many nuances you need to learn and take into account
-                                    that it is legal to move to a residence permit. But I'll tell you for sure -
-                                    it's worth it! Every morning I see Sunny Beach and I am ready to help you in
-                                    moving to Kazakhstan. Good luck!</p>
+                            <div class="img__second">
+                                <img src="../img/boxes.png">
                             </div>
                         </div>
                     </div>
@@ -138,8 +133,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Do you have questions <br> about moving to KZ?</h2>
-                    <p>We will advise<br> You for free!</p>
+                    <h2>Do you have questions<br> about moving to Kazakhstan?</h2>
+                    <p>We will advise <br> You for free!</p>
                     <a href="#">
                         <img src="../img/footerarrow.png">
                     </a>
@@ -159,6 +154,36 @@
             </div>
         </div>
     </section>
-    {% include "./components/footer.njk" %}
-    </body>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <a href="#">
+                        <img src="../img/logofooter.png">
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <p>2016 / All rights reserved</p>
+                </div>
+                <div class="col-md-3">
+                    <a class="politik" href="#">Privacy Policy</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="contacts">
+                        <div class="contacts__img">
+                            <a href="#">
+                                <img src="../img/phonefooter.png">
+                            </a>
+                        </div>
+                        <div class="contacts__phone">
+                            +7 (778) 438-32-10 <br>
+                            +7 (778) 438-32-10
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>

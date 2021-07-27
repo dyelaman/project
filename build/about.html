@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    {% include "./components/head.njk" %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Project SD</title>
 </head>
 <html>
-    <body>
+
+<body>
     <section id="header">
         <div class="top">
             <div class="container">
@@ -159,6 +170,36 @@
             </div>
         </div>
     </section>
-    {% include "./components/footer.njk" %}
-    </body>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <a href="#">
+                        <img src="../img/logofooter.png">
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <p>2016 / All rights reserved</p>
+                </div>
+                <div class="col-md-3">
+                    <a class="politik" href="#">Privacy Policy</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="contacts">
+                        <div class="contacts__img">
+                            <a href="#">
+                                <img src="../img/phonefooter.png">
+                            </a>
+                        </div>
+                        <div class="contacts__phone">
+                            +7 (778) 438-32-10 <br>
+                            +7 (778) 438-32-10
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
