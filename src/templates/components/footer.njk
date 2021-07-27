@@ -28,3 +28,16 @@
         </div>
     </div>
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $('.header__arrow').on('click', function () {
+        $("html, body").animate({ scrollTop: $('#advantages').offset().top }, 1000);
+    });
+
+    $('#reviews .slider').slick({
+        dots: true,
+        // centerMode: true,
+    });
+</script>

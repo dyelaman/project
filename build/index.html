@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,7 +89,7 @@
                         <h1>Kazakhstan</h1>
                         <p>waites you</p>
                         <a href="#">
-                            <img src="../img/arrowheader.png">
+                            <img class="header__arrow" src="../img/arrowheader.png">
                         </a>
                     </div>
                 </div>
@@ -196,28 +198,49 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Feedback from our clients</h2>
-                    <div class="wrapper">
-                        <img class="girl" src="../img/girl.png">
-                        <a href="#">
-                            <img class="left__arrow" src="../img/arrowleft.png">
-                        </a>
-                        <a href="#">
-                            <img class="right__arrow" src="../img/arrowright.png">
-                        </a>
-                        <div class="wrapper__tittle">
-                            <h4>Diana Mellison</h4>
-                            <a href="#">vk.com/mellison</a>
-                            <p>Berlin → Astana</p>
+                    <div class="slider">
+                        <div class="slide__wrapper">
+                            <div class="wrapper">
+                                <img class="girl" src="../img/girl.png">
+                                <div class="wrapper__tittle">
+                                    <h4>Diana Mellison</h4>
+                                    <a href="#">vk.com/mellison</a>
+                                    <p>Berlin → Astana</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in reprehenderit in</p>
-                    </div>
-                    <div class="image__circle">
-                        <img src="../img/circle1.png">
-                        <img src="../img/circle2.png">
-                        <img src="../img/circle3.png">
+                        <div class="slide__wrapper">
+                            <div class="wrapper">
+                                <img class="girl" src="../img/girl.png">
+                                <div class="wrapper__tittle">
+                                    <h4>Diana Mellison</h4>
+                                    <a href="#">vk.com/mellison</a>
+                                    <p>Berlin → Astana</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in</p>
+                            </div>
+                        </div>
+                        <div class="slide__wrapper">
+                            <div class="wrapper">
+                                <img class="girl" src="../img/girl.png">
+                                <div class="wrapper__tittle">
+                                    <h4>Diana Mellison</h4>
+                                    <a href="#">vk.com/mellison</a>
+                                    <p>Berlin → Astana</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in reprehenderit in</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,13 +257,13 @@
                     </a>
                     <form>
                         <label>
-                            <input type="text" placeholder="Имя" class="input">
+                            <input type="text" placeholder="Name" class="input">
                         </label>
                         <label>
                             <input type="email" placeholder="E-mail" class="input">
                         </label>
                         <label>
-                            <input type="tel" placeholder="Телефон" class="input">
+                            <input type="tel" placeholder="Number" class="input">
                         </label>
                         <button type="submit" class="act">Order a consultation</button>
                     </form>
@@ -278,6 +301,22 @@
             </div>
         </div>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $('.header__arrow').on('click', function() {
+            $("html, body").animate({
+                scrollTop: $('#advantages').offset().top
+            }, 1000);
+        });
+
+        $('#reviews .slider').slick({
+            dots: true,
+            // centerMode: true,
+        });
+    </script>
+
 </body>
 
 </html>

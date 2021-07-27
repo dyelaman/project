@@ -53,7 +53,10 @@
 }
 
 header {
-  background-image: url("../img/kz.png");
+  background-image: url("../img/astana.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 
   .top {
     background-image: url("../img/headershadow.png");
@@ -162,7 +165,7 @@ header {
 
       @include r(768) {
         font-size: 47px;
-        letter-spacing: 20px;
+        letter-spacing: 10px;
       }
     }
 
@@ -182,6 +185,7 @@ header {
 
       @include r(758) {
         font-size: 33px;
+        letter-spacing: 10px;
       }
     }
 
@@ -266,7 +270,10 @@ header {
 }
 
 #moving {
-  background-image: url("../img/kz1.png");
+  background-image: url("../img/shatyr.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 95px;
   padding-bottom: 99px;
 
@@ -585,8 +592,8 @@ header {
   }
 
   .wrapper {
-    width: 765px;
-    margin: 0 auto 51px auto;
+    width: 765px !important;
+    margin: 0 auto 51px auto !important;
     padding: 44px 41px 47px 127px;
     box-shadow: 1px 1.7px 4px 0 rgba(149, 147, 147, 0.33);
     background-color: #ffffff;
@@ -613,34 +620,6 @@ header {
       @include r(768) {
         left: calc(50% - 66px);
         top: -70px;
-      }
-    }
-
-    .left__arrow {
-      position: absolute;
-      right: -100px;
-      top: calc(50% - 6px);
-
-      @include r(992) {
-        right: -85px;
-      }
-
-      @include r(768) {
-        display: none;
-      }
-    }
-
-    .right__arrow {
-      position: absolute;
-      left: -166px;
-      top: calc(50% - 6px);
-
-      @include r(992) {
-        left: -140px;
-      }
-
-      @include r(768) {
-        display: none;
       }
     }
 
@@ -692,6 +671,13 @@ header {
     }
   }
 
+  .slick-arrow {
+
+    &:before {
+      color: #11b2f5;
+    }
+  }
+
   p {
     font-size: 14px;
     font-style: italic;
@@ -704,11 +690,8 @@ header {
       text-align: center;
     }
   }
-
-  .image__circle {
-    text-align: center;
-  }
 }
+
 #questions {
   background-image: url("../img/bluebackground.png");
   padding: 84px 0 84px 0;
